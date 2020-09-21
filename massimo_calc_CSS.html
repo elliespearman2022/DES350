@@ -8,9 +8,9 @@
 		background-color: black;
 		font-family: Helvetica, Arial, sans-serif;
 		line-height: 1.4em;
-		width: 100%;
+		width: 90%;
 		padding-left: 5%;
-			
+		margin-top: 0px;
 		}
 	
 	.number {
@@ -146,20 +146,23 @@
 	}
 	
 	#myCalculator{
-		margin-top: 200px;
+		margin-top: 100px;
+		top:0;
+		position: fixed;
 		width: 40%;
 		float:left;
 		display: inline-block;
+		position: fixed;
 	}
 	
 	#display {
 		float:left;
 		display: inline-block;
 		border: none;
-        color: white;
+        color: #D8D1A9;
 		background-color:transparent;
 		width: 544px;
-		height:675px;
+		height:400px;
 		font-size: 60px;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-weight: bolder;
@@ -180,21 +183,73 @@
 	
 	.firstSquare {
 			background:#A03835;
+		position: fixed;
 			margin-left: 550px;
 			width: 300px;
 			height: 1100px;
-		    z-index: -200;
+		    z-index: -2;
 			
 		}
 	
-	.secondSquare {
-		background:black;
-			margin-left: 550px;
-			width: 300px;
-			height: 1100px;
-		    z-index:-100;
+	.sampleSquare {
+		background: black;
+		position: fixed;
+		top:141px;
+		left:624px;
+		width: 270px;
+		height: 15px;
+		z-index: -1;
 	}
 	
+	.sampleSquare2 {
+		background: black;
+		position: fixed;
+		top:232px;
+		left:600px;
+		width: 295px;
+		height: 15px;
+		z-index: -1;
+	}
+	
+	.sampleSquare3 {
+		background: black;
+		position: fixed;
+		top:322px;
+		left:624px;
+		width: 270px;
+		height: 15px;
+		z-index: -1;
+	}
+	
+	.sampleSquare4 {
+		background: black;
+		position: fixed;
+		top:412px;
+		left:624px;
+		width: 92px;
+		height: 15px;
+		z-index: -1;
+	}
+	
+	.sampleSquare5 {
+		background: black;
+		position: fixed;
+		top:685px;
+		left:624px;
+		width: 300px;
+		height: 15px;
+		z-index: -1;
+	}
+	
+	.sampleSquare6 {
+		background: white;
+		position: fixed;
+		top:232px;
+		left:0px;
+		width: 608px;
+		height: 15px;
+		z-index: -1;
+	}
 </style>
 <title>Untitled Document</title>
 </head>
@@ -269,6 +324,12 @@
  
 </div>  	
 </div>
+	 <div class="sampleSquare"></div>
+	 <div class="sampleSquare2"></div>
+	 <div class="sampleSquare3"></div>
+	  <div class="sampleSquare4"></div>
+	  <div class="sampleSquare5"></div>
+	 <div class="sampleSquare6"></div>
 	 <div class="firstSquare"></div>
 </form>
 </body>
