@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	
+	body{
+		background-color: black;
+		font-family: Helvetica, Arial, sans-serif;
+		line-height: 1.4em;
+		width: 90%;
+		padding-left: 5%;
+		margin-top: 0px;
+		}
+	
+	.number {
+		outline: 0;
+		border: none;
+        color: white;
+		background-color: transparent;
+		border-radius: 0px;
+		width: 70px;
+		height:70px;
+		float:left;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 60px;
+		font-weight: bolder;
+		padding: 0px 0px 0px 0px;
+		margin: 10px;
+	}
+	
+	
+	.number:hover {
+		outline: 0;
+		border: none;
+        color: #A03835;
+		background-color: transparent;
+		border-radius: 0px;
+		width: 70px;
+		height:70px;
+		float:left;
+		font-size: 60px;
+		padding: 0px;
+		margin: 10px;
+	}
+	
+		.operator:hover {
+		outline: 0;
+		border: none;
+        color: black;
+		border-radius: 0px;
+		width: 60px;
+		height:60px;
+		font-size: 50px;
+	}
+	
+	
+	.operator {
+		outline: 0;
+		border: none;
+        color: #D8D1A9;
+		background-color: transparent;
+		border-radius: 0px;
+		width: 60px;
+		height:60px;
+		float:left;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 50px;
+		font-weight: bolder;
+		padding: 0px;
+		margin: 18px;
+	}
+	
+	
+		.operatorDOT:hover {
+		outline: 0;
+		border: none;
+        color: black;
+		border-radius: 0px;
+		width: 60px;
+		height:60px;
+		font-size: 50px;
+	}
+	
+	.operatorDOT{
+		outline: 0;
+		border: none;
+        color: #D8D1A9;
+		background-color: transparent;
+		border-radius: 0px;
+		width: 60px;
+		height:60px;
+		float:left;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 50px;
+		font-weight: bolder;
+		padding: 0px 55px 0px 120px;
+		margin: 15px;
+	}
+	
+		.operatorE:hover {
+		outline: 0;
+		border: none;
+        color: black;
+		border-radius: 0px;
+		width: 60px;
+		height:60px;
+		font-size: 50px;
+	}
+	
+	.operatorE {
+		outline: 0;
+		border: none;
+        color: #D8D1A9;
+		background-color: transparent;
+		border-radius: 0px;
+		width: 60px;
+		height:60px;
+		float:left;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 50px;
+		font-weight: bolder;
+		padding: 0px;
+		margin: 12px;
+	}
+	
+	.operatorCLEAR:hover {
+		outline: 0;
+		border: none;
+        color: #A03835;
+		border-radius: 0px;
+		font-size: 50px;
+	}
+	
+	.operatorCLEAR {
+		outline: 0;
+		border: none;
+        color: white;
+		background-color: transparent;
+		border-radius: 0px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 50px;
+		font-weight: bolder;
+		padding: 10px 50px 0px 53px;
+		margin: auto;
+	}
+	
+	#myCalculator{
+		margin-top: 100px;
+		top:0;
+		position: fixed;
+		width: 40%;
+		float:left;
+		display: inline-block;
+		position: fixed;
+	}
+	
+	#display {
+		float:left;
+		display: inline-block;
+		border: none;
+        color: #D8D1A9;
+		background-color:transparent;
+		width: 544px;
+		height:400px;
+		font-size: 60px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: bolder;
+		
+		
+		
+		
+	}
+	
+	
+	.inputRow{ 
+	   width: 100%;
+	   float: left;
+	   padding-left: 20px;
+	   position: relative;
+	   display: inline-block; 
+	}
+	
+	.firstSquare {
+			background:#A03835;
+		position: fixed;
+			margin-left: 550px;
+			width: 300px;
+			height: 1100px;
+		    z-index: -2;
+			
+		}
+	
+	.sampleSquare {
+		background: black;
+		position: fixed;
+		top:141px;
+		left:624px;
+		width: 270px;
+		height: 15px;
+		z-index: -1;
+	}
+	
+	.sampleSquare2 {
+		background: black;
+		position: fixed;
+		top:232px;
+		left:600px;
+		width: 295px;
+		height: 15px;
+		z-index: -1;
+	}
+	
+	.sampleSquare3 {
+		background: black;
+		position: fixed;
+		top:322px;
+		left:624px;
+		width: 270px;
+		height: 15px;
+		z-index: -1;
+	}
+	
+	.sampleSquare4 {
+		background: black;
+		position: fixed;
+		top:412px;
+		left:624px;
+		width: 92px;
+		height: 15px;
+		z-index: -1;
+	}
+	
+	.sampleSquare5 {
+		background: black;
+		position: fixed;
+		top:685px;
+		left:624px;
+		width: 300px;
+		height: 15px;
+		z-index: -1;
+	}
+	
+	.sampleSquare6 {
+		background: white;
+		position: fixed;
+		top:232px;
+		left:0px;
+		width: 608px;
+		height: 15px;
+		z-index: -1;
+	}
+</style>
+<title>Untitled Document</title>
+</head>
+
+<body>
+ <form name="calculator">
+	
+	 <div id="top_display">
+	 
+ <input type="text" name="display" id="display" disabled>
+	 
+ </div>
+	 
+  <div id="myCalculator">
+	  
+	 
+	  
+ <div class="inputRow">
+	 
+   <input type="button" class="number" value="01" onclick="calculator.display.value+='1'">	
+   <input type="button" class="number" value="02" onclick="calculator.display.value+='2'">	
+   <input type="button" class="number" value="03" onclick="calculator.display.value+='3'">	
+   
+	 
+</div>
+
+ <div class="inputRow">
+	
+   <input type="button" class="number" value="04" onclick="calculator.display.value+='4'">
+   <input type="button" class="number" value="05" onclick="calculator.display.value+='5'">	
+   <input type="button" class="number" value="06" onclick="calculator.display.value+='6'">
+	 
+</div>
+	  
+	
+<div class="inputRow">
+	
+   <input type="button" class="number" value="07" onclick="calculator.display.value+='7'">
+   <input type="button" class="number" value="08" onclick="calculator.display.value+='8'">
+   <input type="button" class="number" value="09" onclick="calculator.display.value+='9'">
+	 
+</div>
+
+<div class="inputRow"> 
+	
+   <input type="button" class="number" value="00" onclick="calculator.display.value+='0'">
+   <input type="button" class="operator" name="add" value="+" onclick="calculator.display.value+='+'">
+   <input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value+='-'">
+ 
+</div>
+	
+	  <div class="inputRow">
+		  
+    <input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value+='*'">
+	<input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value+='/'">
+	 <input type="button" class="operatorE" name="equal" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+		  
+	  </div>
+	  
+	  
+	   <div class="inputRow">
+		   
+	   <input type="button" class="operatorDOT" value="." onclick="calculator.display.value+='.'">
+		   
+	 </div>
+	  
+	  
+	  
+	<div class="inputRow"> 	 
+		
+    <input type="button" class="operatorCLEAR" value="CLEAR" onClick="calculator.display.value =''">
+ 
+</div>  	
+</div>
+	 <div class="sampleSquare"></div>
+	 <div class="sampleSquare2"></div>
+	 <div class="sampleSquare3"></div>
+	  <div class="sampleSquare4"></div>
+	  <div class="sampleSquare5"></div>
+	 <div class="sampleSquare6"></div>
+	 <div class="firstSquare"></div>
+</form>
+</body>
+</html>
