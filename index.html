@@ -1,44 +1,359 @@
 <!doctype html>
 <html>
 <head>
+<style>
+	
+	body{
+		background:#FFAA00;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	    height: 1600px;
+	}
+	
+	.layout{
+		margin: 10px 10px 10px 10px;
+	}
+	
+	a{
+		font-weight: 600;
+		color: black;
+	}
+	
+	a:hover{
+		font-size: 36px;
+		color: white;
+	}
+	
+	h1{
+		font-size: 125px;
+		color: black;
+		margin-top: -80px;
+		margin-left: -30px;
+	}
+	
+	h2{
+		font-size: 40px;
+		color: white;
+		margin-left: 20px;
+		margin-bottom: 40px;
+	}
+	
+	h4{
+		color: black;
+		font-size: 12px;
+		font-weight: 600;
+		
+	}
+	
+	h5{
+		font-size: 40px;
+		color: white;
+		margin-top: 30px;
+		margin-bottom: 40px;
+		margin-left: 10px;
+	}
+	
+	h6{
+		font-size: 40px;
+		color: white;
+		margin-top: 30px;
+		margin-left: 60px;
+		margin-bottom: 20px;
+	}
+	
+	h7{
+		color: black;
+		font-size: 125px;
+		font-weight: 600;
+	}
+	
+	h8{
+	 color:white;
+		font-weight: 400;
+		font-size: 18px;	
+	}
+	
+	h9{
+		color: black;
+		font-weight: 600;
+		font-size: 21px;
+		
+	}
+	
+	strong{
+		color:white;
+		font-weight: 400;
+		font-size: 1px;
+	}
+	
+	strong:hover{
+		font-size: 18px;
+		font-weight: 600;
+		color: black;
+		background-color: white; 
+	}
+	
+	p{
+		color:#007FB2;
+		font-weight: 600;
+		font-size: 40px;
+	}
+	
+	.p1{
+		position: absolute;
+		width: 450px;
+		height: 50px;
+		margin-top: -100px;
+		
+	}
+	
+	.p1b{
+		font-size: 400px;
+		opacity: 20%;
+		color: white;
+		position: absolute;
+		width: 400px;
+		height: 50px;
+		margin-top: -570px;
+		margin-left: -50px;
+		z-index: -10;
+		
+	}
+	
+	.p1b2{
+		font-size: 400px;
+		opacity: 20%;
+		color: white;
+		position: absolute;
+		width: 400px;
+		height: 50px;
+		margin-top: -470px;
+		margin-left: -50px;
+		z-index: -10;
+		
+	}
+	
+	.p1b3{
+		font-size: 400px;
+		opacity: 20%;
+		color: white;
+		position: absolute;
+		width: 400px;
+		height: 50px;
+		margin-top: -370px;
+		margin-left: -50px;
+		z-index: -10;
+		
+	}
+	
+	.p2{
+		position: absolute;
+		width: 500px;
+		height: 50px;
+		margin-top: -100px;
+		margin-left: 580px;
+		
+	}
+	
+	.p2b{
+		font-size: 400px;
+		opacity: 20%;
+		color: white;
+		position: absolute;
+		width: 400px;
+		height: 50px;
+		margin-top: -570px;
+		margin-left: 530px;
+		z-index: -10;
+		
+	}
+	
+	.p2b2{
+		font-size: 400px;
+		opacity: 20%;
+		color: white;
+		position: absolute;
+		width: 400px;
+		height: 50px;
+		margin-top: -470px;
+		margin-left: 530px;
+		z-index: -10;
+		
+	}
+	
+	.p2b3{
+		font-size: 400px;
+		opacity: 20%;
+		color: white;
+		position: absolute;
+		width: 400px;
+		height: 50px;
+		margin-top: -370px;
+		margin-left: 530px;
+		z-index: -10;
+		
+	}
+	
+	.p3{
+		position: absolute;
+		width: 450px;
+		height: 50px;
+		margin-top: -100px;
+		margin-left: 1200px;
+		
+	}
+	
+	.p3b{
+	    font-size: 400px;
+		opacity: 20%;
+		color: white;
+		position: absolute;
+		width: 400px;
+		height: 50px;
+		margin-top: -570px;
+		margin-left: 1150px;
+		z-index: -10;
+		
+	}
+	
+	.p3b2{
+	    font-size: 400px;
+		opacity: 20%;
+		color: white;
+		position: absolute;
+		width: 400px;
+		height: 50px;
+		margin-top: -470px;
+		margin-left: 1150px;
+		z-index: -10;
+		
+	}
+	
+    .p3b3{
+	    font-size: 400px;
+		opacity: 20%;
+		color: white;
+		position: absolute;
+		width: 400px;
+		height: 50px;
+		margin-top: -370px;
+		margin-left: 1150px;
+		z-index: -10;
+		
+	}
+	
+
+	.aboutme{
+		margin-top: 700px;
+		margin-left: 259PX;
+	}
+	
+		.elememt{
+		background: #00CEFF;
+		opacity: 70%;
+		width: 1600px;
+        height: 800px; 
+        border-top-left-radius: 800px;
+        border-top-right-radius: 800px;
+		margin-left: -800px ;
+		transform: rotate(180deg);
+		z-index: -11;
+		position: fixed;
+		}
+	
+	</style>
 <meta charset="UTF-8">
 <title>Ellie Spearman / DES350</title>
 </head>
 
 <body>
+
+<div class="layout">
+	<h1> ELLIE SPEARMAN / DES350 </h1><br>
 	
-	<strong> Ellie Spearman / DES350 </strong><br>
-	<a href="calculator_CSS.html" target="_self">CSS Calculator</a><br>
+	<div class="elememt"></div>
+<div class="p1">
+	<br><h2>HTML Calculator</h2>
+	<strong>We will code a simple calculator using HTML and Javascript in class. We will then add CSS code to style the calculator. The calculator will be styled using CSS with the following considerations:
+
+   <br>• Functionality – how does it work?
+   <br>• User experience – how will a user interact with it?
+   <br>• User Familiarity – how do calculators usually look?
+   <br>• Aesthetics – does the style add or detract from the function?
+   <br>• The calculator will be styled in two ways: one freeform, and one focusing on the work of a designer.
+</strong>
+	<p>HTML/CSS CALCULATOR</p>
+	<a href="calculator_CSS.html" target="_self">CSS Calc.</a><br>
 	
-	<br><strong> Mood Board </strong><br>
-	<a href="Massimo_Mood_Board.jpg" target="_self">massimo board</a><br>
+	<br><p>MASSIMO INSPO. CALCULATOR</p>
+	<a href="calculator_draft.jpg" target="_self">Draft 1</a><br>
+	<a href="calculator_draft2.jpg" target="_self">Draft 2</a><br>
+	<a href="massimo_calc_CSS.html" target="_self">FINAL</a><br>
+</div>
 	
-	<br><strong> Massimo Calculator </strong><br>
-	<a href="calculator_draft.jpg" target="_self">draft</a><br>
-	<a href="calculator_draft2.jpg" target="_self">draft2</a><br>
 	
-	<br><strong> Massimo Calculator Coded </strong><br>
-	<a href="massimo_calc_CSS.html" target="_self">final code</a><br>
-	
-	<br><strong> Dieter Rams 10 </strong><br>
-	<a href="10principles.html" target="_self">10 principles</a><br>
-	
-	<br><strong> 10 Principles Poster Drafts </strong><br>
-	<a href="poster_draft.jpg" target="_self">draft</a><br>
-	
-	<br><strong> 10P SVGs </strong><br>
-	<a href="10background.svg1" target="background">SVG</a><br>
-	<a href="10background.svg2" target="background">SVG</a><br>
-	
-	<br><strong> 10P Website </strong><br>
+<div class="p2">
+	<br><h5>Information Architecture</h5>
+	<strong>• We will discuss Dieter Rams and his 10 principles of design.
+    <br>• We will look at how these principles apply to your work and write an essay responding to each of his points.
+    <br>• We will create a responsive web-based poster based on your essay.
+    <br>• This poster will have at least one break-point for smaller screens.
+    <br>• Lastly, we will create a copy of the design and adjust the CSS styling based on the work of any chosen designer or studio.
+</strong>
+
+	<p>10 PRINCIPLES WEBSITE</p>
+	<a href="10principles.html" target="_self">Essay</a><br>
+	<a href="poster_draft.jpg" target="_self">Draft</a><br>
 	<a href="10_second.html" target="background">FINAL</a><br>
 	<a href="10_second_studio_inspo.html" target="background">FINAL INSPO</a><br>
 	
-	<br><strong> P3 Drafts </strong><br>
+		<br><h4>WEB BACKGROUND IMG.</h4>
+    <a href="10background.svg1" target="background">SVG</a><br>
+	<a href="10background.svg2" target="background">SVG</a><br>
+</div>
+	
+	
+<div class="p3">
+	<br><h6>The HTML Portrait</h6><br>
+	<strong>• Choose a portrait you took which focuses on the face.
+<br>• In Illustrator, create two drawings of the portrait using geometric shapes. Grayscale only.
+<br>• Change Illustrator preferences to work with pixels.
+<br>• Work with an artboard that is 1920px by 1080px.
+<br>• The drawing should be minimal and convey emotion (ex. Apple Animojis).
+<br>• Consider the types of shapes you can create in HTML – rectangles, circles, ovals and triangles.
+<br>• Once your drawing is approved, recreate it using only DIVs in HTML.
+<br>• Use DIVs position absolute, and start with the drawing aligning to the top and left of your browser.</strong>
+	<p>DRAFT</p>
 	<a href="project3_AI.jpg" target="_self">P3 draft</a><br>
+</div>
+
+<div class="p1b"><h3>P1</h3></div>
+<div class="p2b"><h3>P2</h3></div>
+<div class="p3b"><h3>P3</h3></div>
+
 	
+<div class="p1b2"><h3>P1</h3></div>
+<div class="p2b2"><h3>P2</h3></div>
+<div class="p3b2"><h3>P3</h3></div>
+
 	
+<div class="p1b3"><h3>P1</h3></div>
+<div class="p2b3"><h3>P2</h3></div>
+<div class="p3b3"><h3>P3</h3></div>
+
+<div class="aboutme"><h7>ABOUT ME/EM TUOBA</h7><br>
 	
+	<br><h8>Hi :) My name is Ellie Spearman and I am an upcoming graphic designer living on the west side of Chicago. I have a 6 year, and counting streak of graphic art skills and experience under my belt. My passion for visual communications emerged when I was 13 years old and has only continued to thrive since. I am deeply educated on the entire Adobe Cloud platform. Along side my work in graphic design, I am also a well rounded musician, song writier, and scholar athlete graduate. Currently, I am an Undergraduate Student at the University of Chicago Illinois on a four year track to attain my Bachlors degree in Graphic Design. I do some freelance work on the side as well. My work various from logo designs for upcoming businesses and organizations, to photoshoots/album cover designs for upcoming artists.</h8><br>
+	
+<br><h9>Contact<br>
+
+<br>Business E-mail: elliespearman@icould.com<br>
+Personal E-mail: EellieRrenee@gmail.com<br>
+
+<br>Instagram: @g.ravity_19</h9>
+	
+	</div>
+
+</div>
 	
 </body>
 </html>
