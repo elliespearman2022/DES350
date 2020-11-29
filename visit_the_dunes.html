@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	body{
+		height: 6810px;
+		background-image: url("dunes_back2.svg");
+		background-size: 100%;
+		position: relative;
+		z-index: -100;
+		
+	}
+	
+	.header {
+		position: relative;
+		float: right;
+		margin-top: 50px;
+		margin-right: 20px
+	}
+	
+	h1{
+		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+		font-weight: 900;
+		font-style: italic;
+		font-size: 200px;
+		color:white;
+		margin-top: -50px;
+		margin-bottom: -50px;
+	}
+	
+	h2{
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		color: white;
+		font-size: 60px;
+	}
+	
+	h3{
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		color: white;
+		font-size: 60px;
+		text-align: right;
+	}
+	
+	.mystic{
+		position: absolute;
+	  margin-top: 2400px;
+	}
+	
+	h4{
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		color: white;
+		font-size: 120px;
+		text-align: center;
+		
+	}
+	
+	.save{
+		position: absolute;
+	    margin-top: 5250px;
+		margin-left: 320px;	
+	}
+	
+	.saveoutline{
+		position: absolute;
+	    margin-top: 5400px;
+		margin-left: 300px;
+		width: 1070px;
+		height: 180px;
+		outline-style: solid;
+		outline-width: 10px;
+		outline-color: #720101;
+		z-index: -5;
+	}
+	
+	.official{
+		position: absolute;
+		margin-top: 5530px;
+		margin-left: 140px;	
+	}
+	
+	a{
+		color: white;
+	}
+	
+	a:hover {
+		color: #720101;
+	}
+	
+	.info{
+		position: absolute;
+		margin-top: 6400px;
+		margin-left: 50px;
+	}
+	
+	h6{
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		color: white;
+		font-weight: bold;
+		font-size: 70px;
+		margin-bottom: -40px;
+	}
+	.para1{
+		position: absolute;
+		width: 600px;
+		margin-left: 50px;
+		margin-top: 3500px;
+	}
+	
+	.para2{
+		position: absolute;
+		width: 600px;
+		margin-left: 50px;
+		margin-top: 4300px;
+	}
+	p{
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		color: white;
+		font-size: 40px;
+	}
+	
+	.activities{
+		position: absolute;
+		margin-top: 2730px;
+		float: right;
+		margin-left: 1000px;
+	}
+	
+	h5{
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		color: white;
+		font-weight: bold;
+		font-size: 70px;
+		margin-bottom: -30px
+	}
+	
+	.icons{
+		position: absolute;
+		margin-top: 2800px;
+		margin-left: 820px;
+		
+	}
+	
+	.iconbeach{
+		width: 150px;
+		height: 150px;
+		background-image: url("beach.svg");
+		margin-top: 20px;
+		
+	}
+	
+	.iconboat{
+		width: 150px;
+		height: 150px;
+		background-image: url("bike.svg");
+		margin-top: 20px;
+		
+	}
+	
+	.iconbike{
+		width: 150px;
+		height: 150px;
+		background-image: url("boat.svg");
+		margin-top: 20px;
+		
+	}
+	
+	.iconcamp{
+		width: 150px;
+		height: 150px;
+		background-image: url("camp.svg");
+		margin-top: 20px;
+		
+	}
+	
+	.iconhorse{
+		width: 150px;
+		height: 150px;
+		background-image: url("horse.svg");
+		margin-top: 20px;
+		
+	}
+	
+	h7{
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		color: white;
+		font-weight: bold;
+		font-size: 90px;
+	}
+	
+	.rellax{
+		position: absolute;
+		margin-left: 300px;
+		margin-top: 950px;
+	}
+	
+	.rellax1{
+		position: absolute;
+		margin-left: 700px;
+		margin-top: 1000px;
+	}
+	
+	.rellax2{
+		position: absolute;
+		margin-left: 1220px;
+		margin-top: 1700px;
+	}
+	
+	#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 21px;
+  border: none;
+  outline: none;
+  background-color: #720101;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+	
+	
+	</style>
+<meta charset="UTF-8">
+<title>Visit the Indiana Dunes National Park</title>
+</head>
+
+<body>
+	
+	<div class="header"> <h2>VISIT</h2><h1>INDIANA<br>DUNES</h1><h3>NATIONAL PARK</h3></div>
+	
+	<div class="mystic" data-rellax-speed="-2"><h4>GO SEE INDIANA’S MYSTIC TREASURE</h4></div>
+	
+	<div class="para1"><p>Indiana Dunes National Park is a United States National Park located in Northwestern Indiana, managed by the National Park Service. It was authorized by Congress in 1966 as the Indiana Dunes National Lakeshore, the name by which it was known until it was designated the nation's 61st national park on February 15, 2019.</p></div>
+	
+	<div class="para2"><p>Stretching along 15 miles of the southern shore of Lake Michigan, this national park offers an incredible diversity of habitats 
+and visitor experiences. Beyond the sandy beaches, explore rugged dunes, quiet forests and tranquil wetlands along 50 miles of hiking trails. World-class birding and over 1,100 native plant species makes this 15,000 acre park among the most biologically rich in the nation.</p></div>
+	
+	<div class="list" data-rellax-speed="-2">
+	<div class="activities">
+	<h5>Beach Going</h5>
+	<h5>Fishing & Boating</h5>
+	<h5>Hiking & Biking</h5>
+	<h5>Camping</h5>
+	<h5>Horseback Riding</h5>
+	</div>
+	
+	<div class="icons">
+	<div class="iconbeach"></div>
+	<div class="iconboat"></div>
+	<div class="iconbike"></div>
+	<div class="iconcamp"></div>
+	<div class="iconhorse"></div>
+		</div>
+	</div>
+	
+	<div class="save"><h4>SAVE THE DUNES</h4></div>
+	
+	<div class="saveoutline"></div>
+	<div class="official"><h5>VISIT THE <a href="https://www.nps.gov/indu/index.htm">OFFICIAL WEBSITE</a> FOR MORE</h5></div>
+	
+	<div class="info"><h6>INFORMATION SOURCE<br></h6>
+	<a href="https://www.nps.gov/indu/index.htm"><p>https://www.nps.gov/indu/index.htm</p></a></div>
+	
+	<div class="rellax" data-rellax-speed="-2">
+  <h6> 41.6506° N, </h6>	
+</div>
+	
+	<div class="rellax1" data-rellax-speed="-3">
+  <h6> 87.0708° W </h6>	
+</div>
+	
+	<div class="rellax2" data-rellax-speed="-4"
+  data-rellax-percentage="0.5">
+  <h7>23.54 mi²</h7>
+</div>
+	
+	<!-- javascript -->
+  <script type="text/javascript" src="rellax.js"></script>
+  <script type="text/javascript" src="option.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax', {
+      // center: true
+      callback: function (position) {
+        // callback every position change
+        console.log(position);
+      },
+      breakpoints: [576, 768, 1024]
+    });
+  </script>
+	
+	<!-- javascript -->
+  <script type="text/javascript" src="rellax.js"></script>
+  <script type="text/javascript" src="option.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax1', {
+      // center: true
+      callback: function (position) {
+        // callback every position change
+        console.log(position);
+      },
+      breakpoints: [576, 768, 1024]
+    });
+  </script>
+	
+	<!-- javascript -->
+  <script type="text/javascript" src="rellax.js"></script>
+  <script type="text/javascript" src="option.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax2', {
+      // center: true
+      callback: function (position) {
+        // callback every position change
+        console.log(position);
+      },
+      breakpoints: [576, 768, 1024]
+    });
+  </script>
+	
+	<!-- javascript -->
+  <script type="text/javascript" src="rellax.js"></script>
+  <script type="text/javascript" src="option.js"></script>
+  <script>
+    var rellax = new Rellax('.mystic', {
+      // center: true
+      callback: function (position) {
+        // callback every position change
+        console.log(position);
+      },
+      breakpoints: [576, 768, 1024]
+    });
+  </script>
+	
+		<!-- javascript -->
+  <script type="text/javascript" src="rellax.js"></script>
+  <script type="text/javascript" src="option.js"></script>
+  <script>
+    var rellax = new Rellax('.list', {
+      // center: true
+      callback: function (position) {
+        // callback every position change
+        console.log(position);
+      },
+      breakpoints: [576, 768, 1024]
+    });
+  </script>
+	
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">BACK TO TOP</button>
+	
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	
+	
+</body>
+</html>
